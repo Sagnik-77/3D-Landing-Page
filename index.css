@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+
+}
+
+.container
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card
+{
+    min-height: 80vh;
+    width: 35rem;
+    box-shadow: 0 2rem 2rem rgba(0,0,0 ,0.2), 0 0 4rem rgba(0,0,0 ,0.2) ;
+    border-radius: 2rem;
+    padding: 5rem;
+    transform-style: preserve-3d;
+}
+
+.iphone
+{
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.iphone img
+{
+    width: 12rem;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+}
+
+.circle
+{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    background: linear-gradient(to right, #d51e65,#c70a2e);
+    position: absolute;
+    z-index: 1;
+}
+.info h1
+{
+    font-size: 2rem;
+    margin-top: 2rem;
+    transition: all 0.75s ease-out;
+}
+
+.info h3
+{
+    font-size: 1rem;
+    padding: 1.5rem 0;
+    color: rgb(143, 134, 134);
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+}
+.variant
+{
+    display: flex;
+    justify-content: space-around;
+    transition: all 0.75s ease-out;
+}
+
+.variant button
+{
+    padding: 0.5rem 2rem;
+    background: none;
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0 ,0.2);
+    border-radius: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #d51e65;
+}
+
+
+button.active
+{
+   background: linear-gradient(#d51e65,#c70a2e);
+   color: white;
+}
+.buy
+{
+    margin-top: 3rem;
+    transition: all 0.75s ease-out;
+}
+
+.buy button
+{
+    width: 100%;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 1rem 0rem;
+    background: linear-gradient(rgb(4, 4, 160),blue);
+    color: white;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+
+@media (max-width:768px)
+{
+    .container
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card
+{
+    min-height: 50vh;
+    width: 30rem;
+    box-shadow: 0 2rem 2rem rgba(0,0,0 ,0.2), 0 0 4rem rgba(0,0,0 ,0.2) ;
+    border-radius: 2rem;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    transform-style: preserve-3d;
+}
+
+.iphone
+{
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.iphone img
+{
+    width: 9rem;
+    z-index: 2;
+}
+
+.circle
+{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background: linear-gradient(to right, #d51e65,#c70a2e);
+    position: absolute;
+    z-index: 1;
+}
+.info h1
+{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.info h3
+{
+    font-size: 0.8rem;
+    padding: 1.5rem 0;
+    color: rgb(143, 134, 134);
+    font-weight: lighter;
+}
+.variant
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.variant button
+{
+    padding: 0.5rem 1.5rem;
+    background: none;
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0 ,0.2);
+    border-radius: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #d51e65;
+}
+
+
+button.active
+{
+   background: linear-gradient(#d51e65,#c70a2e);
+   color: white;
+}
+.buy
+{
+    margin-top: 2rem;
+    margin-left: 2.5em;
+}
+
+.buy button
+{
+    width: 80%;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 1rem 0rem;
+    background: linear-gradient(rgb(4, 4, 160),blue);
+    color: white;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+}
